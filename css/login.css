@@ -1,14 +1,15 @@
 *{
-    margin: 0; 
-    padding: 0;
+margin: 0; 
+padding: 0;
 }
 body{
     
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(251, 86, 48);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(251, 86, 48);;
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;        /* garante que o body ocupa a tela toda */
    
 }
 .login{
@@ -17,7 +18,7 @@ width: 450px;
 height: 600px;
 background-color: #fff;
 border-radius: 10px;
-margin-bottom: 10x;
+margin-bottom: 20px;
 }
 
 .login-dentro{
@@ -29,7 +30,7 @@ align-items: center;
 }
 
 .login-dentro h2{
-font-size: 28px;
+font-size: 26px;
 margin-bottom: 40px;
 }
 
@@ -74,12 +75,12 @@ color: rgb(4, 155, 215);
   font-size: 13px;
 }
 
-button[type="submit"]
+button[type="button"]
 {
     font-size: 15px;
     padding: 10px;
     width: 100%;
-    background-color: rgb(251, 86, 48);;
+    background-color: rgb(251, 86, 48);
     color: #f0ece4;
     text-transform: uppercase;
      
@@ -114,6 +115,74 @@ color: rgb(251, 86, 48);
 }
 .cadastro p{
 color: rgb(195, 195, 195)
+}
+
+footer {
+width: 100vw;
+box-sizing: border-box;  /* padding não aumenta a largura */
+margin-top: auto;    
+background-color: rgb(245, 245, 245);
+border-top: 3px solid rgb(251, 86, 48);
+padding: 40px;
+}
+
+.footer-pai {
+display: flex;              
+justify-content: space-between;
+gap: 20px;
+}
+
+.footer-coluna {
+display: flex;
+flex-direction: column;     
+gap: 8px;
+}
+
+.footer-coluna h4 {
+font-size: 13px;
+text-transform: uppercase;
+margin-bottom: 8px;
+color: #222;
+margin-bottom: 20px;
+}
+
+.footer-coluna a {
+display: flex;     
+flex-direction: row;
+align-items: center; 
+font-size: 12px;
+gap: 8px;
+color: #888;
+text-decoration: none;
+
+}
+
+.pagamentos {
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+flex-wrap: wrap;            /* quebra linha se não couber */
+gap: 3px;
+}
+
+.footer-coluna i{  
+font-size: 25px;
+color: #000000;
+}
+
+.apps {
+display: flex;
+flex-direction: column;
+gap: 25px;
+margin-top: 8px;
+}
+
+.footer-rodape {
+border-top: 1px solid #c4bebe;
+margin-top: 32px;
+padding-top: 16px;
+text-align: center;
+font-size: 15x;
+color: #585555;
 }
 
 
