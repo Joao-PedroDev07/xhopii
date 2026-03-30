@@ -1,0 +1,6 @@
+footer{
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}

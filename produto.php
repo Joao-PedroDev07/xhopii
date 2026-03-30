@@ -7,6 +7,10 @@
     <title>Produto</title>
 </head>
 <body>
+    <?php include 'header1.html'; ?>
 
+    aaaaaaaaaaaaada~dwadlahdlwadlkw
+    
+    <?php include 'footer.html'; ?>
 </body>
 </html>
