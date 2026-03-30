@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+header .Logo-Xhopii{
+    background-color: rgb(251, 86, 48);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 75%;
+}
+
+header .Logo-Xhopii h1{
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 15px;
+}
+
+header .Logo-Xhopii img{
+    height: 45px;
+    border-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+header .Container-Campos-Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(215, 215, 215);
+    height: 35px;
+}
+
+header .Campos-Header{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 80%;
+
+}
+
+header .Campos-Header ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    list-style: none;
+}
+
+header .Campos-Header a{
+    color: rgb(251, 86, 48);
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 15px;
+}
