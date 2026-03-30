@@ -26,12 +26,12 @@
                 <input type="password" id="senha" placeholder="Senha">
                 </div>
 
-                <a href="home.html">
+                <a href="home.php">
                 <button type="button"> Entre</button>
                 </a>
 
                 <div class="links">
-                <a href="esqueci_senha.html"> Esqueci minha senha</a>
+                <a href="esqueceu_senha.php"> Esqueci minha senha</a>
                 <a href="">Fazer login com SMS</a>
                 </div>      
 
@@ -66,4 +66,4 @@
 </body>
 </html>
 
-<?php include 'footer.html'; ?>
+<?php include 'footer.php'; ?>
