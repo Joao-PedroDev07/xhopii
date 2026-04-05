@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="cadastro"> 
-                    <p>Novo na Xhoppi?</p> <a href="cadastro.httml">Cadastrar</a>
+                    <p>Novo na Xhoppi?</p> <a href="cad_cliente.php">Cadastrar</a>
                 </div>
             </form>
         </div>

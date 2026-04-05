@@ -17,10 +17,10 @@
         <section class="Container-Campos-Header">
                 <nav class="Campos-Header">
                     <ul>
-                        <li><a href="../home.html">Home</a></li>
-                        <li><a href="#">Cadastro Cliente</a></li>
-                        <li><a href="#">Cadastro Funcionário</a></li>
-                        <li><a href="#">Cadastro Produto</a></li>
+                        <li><a href="../home.php">Home</a></li>
+                        <li><a href="../cad_cliente.php">Cadastro Cliente</a></li>
+                        <li><a href="../cad_func.php">Cadastro Funcionário</a></li>
+                        <li><a href="../cad_produto.php">Cadastro Produto</a></li>
                         <li><a href="#">Ver Clientes</a></li>
                         <li><a href="#">Ver Funcionários</a></li>
                         <li><a href="#">Ver Produtos</a></li>
