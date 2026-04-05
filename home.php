@@ -58,14 +58,137 @@
         </div>
 
         <div class="Promoções">
+        <img src="img/cupom.png">
             
         </div>
 
+        <h1> Descobertas do Dia </h1>
+
+        <div class="linha"></div>
+
         <div class="Produtos">
+               
+
+                <div class="caixa-de-produtos">
+
+                    <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+                    </a>
+
+                    <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                     <a href="produto.php">
+                    <div class="card-produto">
+                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                        <div class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                        </div>
+                    </div>
+                    </a>
+
+                </div>
 
         </div>
 
     </div>
+
+<?php include 'footer.php'; ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
