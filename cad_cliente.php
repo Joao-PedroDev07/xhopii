@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="css/cad_cliente.css">
 
 <body>
-
 <?php include 'header4.php'; ?>
-
     <div class="cadastro">
         <div class="cadastro-dentro">
             <h2> Cadastrar Cliente </h2 >

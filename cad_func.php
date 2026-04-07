@@ -9,7 +9,11 @@
 
 <body>
 
+<<<<<<< HEAD
 <?php include 'header4.php'; ?>
+=======
+<?php include 'header1.php'; ?>
+>>>>>>> 808132c6f0a6ee935d03ba9250a2238048a2b648
 
     <div class="cadastro">
         <div class="cadastro-dentro">
