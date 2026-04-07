@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 200, 200);
+}
+
+.Container-Principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 80px;
+}
+
+.Titulo-Pagina {
+    color: rgb(251, 86, 48);
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.Grid-Lojas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.Card-Loja {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.Card-Logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: rgb(251, 86, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Loja-Logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Card-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.Loja-Nome {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    text-align: center;
+    color: rgb(40, 40, 40);
+}
+
+.Loja-Dado {
+    font-size: 12px;
+    color: rgb(94, 94, 94);
+    margin: 0;
+    text-align: center;
+}
+
+.Loja-Dado span {
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+}
+
+.Card-Acoes {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.Btn-Ver {
+    padding: 8px 20px;
+    background-color: rgb(251, 86, 48);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+}
+
+.Btn-Ver:hover {
+    background-color: rgb(220, 70, 35);
+}
+
+.Btn-Excluir {
+    padding: 8px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(94, 94, 94);
+    border: 1px solid rgb(200, 200, 200);
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+}
+
+.Btn-Excluir:hover {
+    border-color: rgb(251, 86, 48);
+    color: rgb(251, 86, 48);
+}

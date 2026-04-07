@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueci Senha</title>
+    <title>Redefinir Senha</title>
     <link rel="stylesheet" href="css/esqueceu_senha.css">
 </head>
 <body>
-
+<?php include 'header3.php'; ?>
     <div class="esqueceu_senha">
 
         <div class="seta"> 

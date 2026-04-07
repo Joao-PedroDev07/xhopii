@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Container-Principal
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 200px;
+    padding-top: 75px;
+      gap: 40px;
+}
+
+.Imgs{
+    display: flex;
+    flex-direction: row;
+}
+
+.Imgs .Imgs-Produto-Sec{
+    list-style: none;
+}
+
+.Imgs .Imgs-Produto-Sec ul{
+    list-style: none;
+}
+
+.Imgs .Imgs-Produto-Sec ul li{
+        border-radius: 100px;
+}
+
+.Imgs .Imgs-Produto-Sec ul li input[type="radio"] {
+    display: none;
+
+}
+
+.Imgs .Imgs-Produto-Sec ul li input:checked +label img{ 
+  border: 2px solid rgb(251, 86, 48);
+}
+
+.Imgs .Imgs-Produto-Sec img{
+    height: 100px;
+}
+
+.Imgs .Img-Principal img{
+    height: 620px;
+    width: 600px;
+}
+
+.Desc-Items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 400px;
+}
+
+.Desc-Items .Label-Titulo{
+    white-space: nowrap;
+    font-size: 35px;
+}
+
+.Desc-Items .Label-Preco{
+    padding-top: 15px;
+    color: rgb(251, 86, 48);
+    font-size: 35px;
+}
+
+.Desc-Items .Label-Estoque{
+    padding-top: 10px;
+}
+
+.Desc-Items .Label-Modelos{
+        padding-top: 15px;
+        padding-bottom: 25px;
+}
+
+.Desc-Items .Modelos{
+    display: flex;
+    gap: 5px;
+}
+
+.Desc-Items .Btn-Modelos{
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+}
+
+.Desc-Items .Btn-Modelos input{
+    display: none;
+}   
+
+.Desc-Items .Label-Tamanhos{
+    padding-top: 15px;
+}
+
+.Desc-Items .Tamanhos{
+    padding-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.Desc-Items .Btn-Tamanhos{
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    color: rgb(94, 94, 94);
+}
+
+.Desc-Items .Label-Size-Selected{
+    padding-top: 15px;
+}
+
+.Desc-Items .Btn-Tamanhos input{
+    display: none;
+}
+.Desc-Items .Btn-Comprar-Container{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.Desc-Items .Btn-Comprar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: rgb(251, 86, 48);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;       /* Tira a borda 3D padrão */
+    box-shadow: none;   /* Garante que não tem sombra */
+    outline: none;
+    font-size: 12px;
+}
+

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<?php include 'header1.php'; ?>
+<?php include 'header2.php'; ?>
 
     <div class="login">
         <div class="login-dentro">
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="cadastro"> 
-                    <p>Novo na Xhoppi?</p> <a href="cadastro.httml">Cadastrar</a>
+                    <p>Novo na Xhoppi?</p> <a href="cad_cliente.php">Cadastrar</a>
                 </div>
             </form>
         </div>

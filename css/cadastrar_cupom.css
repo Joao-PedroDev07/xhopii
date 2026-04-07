@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 200, 200);
+}
+
+.Container-Form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 80vh;
+}
+
+.Form-Box {
+    background-color: rgb(255, 255, 255);
+    padding: 40px 50px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Form-Titulo {
+    color: rgb(251, 86, 48);
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+}
+
+.Form-Input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    font-size: 13px;
+    color: rgb(94, 94, 94);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.Form-Input:focus {
+    border-color: rgb(251, 86, 48);
+}
+
+.Form-Input::placeholder {
+    color: rgb(160, 160, 160);
+}
+
+/* Label laranja para foto */
+.Form-Label-Foto {
+    color: rgb(251, 86, 48);
+    font-size: 13px;
+    margin: 5px 0 12px 0;
+    text-align: center;
+}
+
+/* Linha do input de arquivo */
+.Form-File-Row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Botão "Escolher arquivo" com borda arredondada laranja */
+.Btn-Arquivo {
+    padding: 8px 18px;
+    border: 1px solid rgb(251, 86, 48);
+    border-radius: 20px;
+    color: rgb(251, 86, 48);
+    font-size: 13px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.Btn-Arquivo:hover {
+    background-color: rgb(251, 86, 48);
+    color: rgb(255, 255, 255);
+}
+
+/* Esconde o input file nativo */
+.Input-File {
+    display: none;
+}
+
+.File-Nome {
+    font-size: 12px;
+    color: rgb(94, 94, 94);
+}
+
+/* Botão CADASTRAR largo */
+.Btn-Cadastrar-Container {
+    display: flex;
+    justify-content: center;
+}
+
+.Btn-Cadastrar {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(251, 86, 48);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 0;
+}
+
+.Btn-Cadastrar:hover {
+    background-color: rgb(220, 70, 35);
+}
