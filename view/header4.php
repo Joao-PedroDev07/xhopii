@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="../css/header4.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <section class="Logo-Xhopii">
             <a href="">
-                <img src="img/logo.png" alt="Logo">
+                <img src="../img/logo.png" alt="Logo">
             </a>
             <h1>Xhopii</h1>
+            <a href="index.php" class="Label-Sair">
+            <h1 >Sair</h1>
+            </a>
+
         </section>
         <section class="Container-Campos-Header">
                 <nav class="Campos-Header">
                     <ul>
-<<<<<<< HEAD
                         <li><a href="home.php">Home</a></li>
                         <li><a href="cad_cliente.php">Cadastro Cliente</a></li>
                         <li><a href="cad_func.php">Cadastro Funcionário</a></li>
@@ -25,15 +28,6 @@
                         <li><a href="ver_clientes.php">Ver Clientes</a></li>
                         <li><a href="ver_funcionarios.php">Ver Funcionários</a></li>
                         <li><a href="ver_produtos.php">Ver Produtos</a></li>
-=======
-                        <li><a href="../home.php">Home</a></li>
-                        <li><a href="../cad_cliente.php">Cadastro Cliente</a></li>
-                        <li><a href="../cad_func.php">Cadastro Funcionário</a></li>
-                        <li><a href="../cad_produto.php">Cadastro Produto</a></li>
-                        <li><a href="#">Ver Clientes</a></li>
-                        <li><a href="#">Ver Funcionários</a></li>
-                        <li><a href="#">Ver Produtos</a></li>
->>>>>>> 808132c6f0a6ee935d03ba9250a2238048a2b648
                     </ul>
                 </nav>
         </section>

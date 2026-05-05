@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Produto</title>
-    <link rel="stylesheet" href="css/cad_cliente.css">
+    <title>Cadastro Funcionario</title>
+    <link rel="stylesheet" href="../css/cad_cliente.css">
 
 <body>
 
@@ -13,7 +13,7 @@
 
     <div class="cadastro">
         <div class="cadastro-dentro">
-            <h2> Cadastrar Produto </h2 >
+            <h2> Cadastrar Funcionário </h2 >
             
             <form>
 
@@ -22,25 +22,41 @@
                 </div>
 
                 <div class="campo">
-                <input type="text" id="fabricante" placeholder="Fabricante">
+                <input type="text" id="sobrenome" placeholder="Sobrenome">
                 </div>
 
                 <div class="campo">
-                <input type="text" id="descricao" placeholder="Descrição">  
+                <input type="number" id="CPF" placeholder="CPF">  
                 </div>
 
                 <div class="campo">
-                <input type="number" id="valor" placeholder="Valor">
+                <input type="date" id="data" placeholder="Data">
                 </div>
 
                 <div class="campo">
-                <input type="number" id="quantidade" placeholder="Quantidade">
+                <input type="number" id="numero" placeholder="Telefone">
                 </div>
 
-               
+                <div class="campo">
+                <input type="text" id="cargo" placeholder="Cargo/Função">
+                </div>
+
+
+                <div class="campo">
+                <input type="number" id="salario" placeholder="Salário">
+                </div>
+
+
+                <div class="campo">
+                <input type="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="campo"> 
+                <input type="password" id="senha" placeholder="Senha">
+                </div>
 
                 <div class="foto_perfil">
-                    <h2> Selecionar foto do produto: </h2>
+                    <h2> Selecionar foto de perfl: </h2>
                     <div class="area-arquivo">
                         <label for="foto" id="button2">Escolher arquivo</label>
                         <input type="file" id="foto" style="display:none"> <!-- display none escode input !-->

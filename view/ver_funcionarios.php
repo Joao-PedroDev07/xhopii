@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/ver_funcionarios.css">
+    <link rel="stylesheet" href="../css/ver_funcionarios.css">
     <title>Funcionários</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
                 <article class="Card-Funcionario">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Funcionario-Nome">João Pedro Silva</h3>
@@ -33,7 +33,7 @@
 
                 <article class="Card-Funcionario">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Funcionario-Nome">Maria Fernanda Souza</h3>
@@ -50,7 +50,7 @@
 
                 <article class="Card-Funcionario">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Funcionario-Nome">Carlos Eduardo Lima</h3>
@@ -67,7 +67,7 @@
 
                 <article class="Card-Funcionario">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Funcionario-Nome">Ana Paula Costa</h3>
@@ -84,7 +84,7 @@
 
                 <article class="Card-Funcionario">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Funcionario-Nome">Lucas Henrique Martins</h3>
@@ -101,7 +101,7 @@
 
                 <article class="Card-Funcionario">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Funcionário" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Funcionario-Nome">Beatriz Oliveira Ramos</h3>

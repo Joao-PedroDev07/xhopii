@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/produto.css">
+    <link rel="stylesheet" href="../css/produto.css">
     
     <title>Produto</title>
 </head>
@@ -18,42 +18,42 @@
                     <li>
                         <input type="radio" name="img" id="img1" checked>
                         <label for="img1">
-                        <img src="img/produto1.png">
+                        <img src="../img/produto1.png">
                         </label>
                     </li>
 
                     <li>
                         <input type="radio" name="img" id="img2">
                         <label for="img2">
-                        <img src="img/produto2.png">
+                        <img src="../img/produto2.png">
                         </label>
                     </li>
 
                     <li>
                         <input type="radio" name="img" id="img3">
                         <label for="img3">
-                        <img src="img/produto3.png">
+                        <img src="../img/produto3.png">
                         </label>
                     </li>
 
                     <li>
                         <input type="radio" name="img" id="img4">
                         <label for="img4"> 
-                        <img src="img/produto4.png">
+                        <img src="../img/produto4.png">
                         </label>
                     </li>
 
                     <li>
                         <input type="radio" name="img" id="img5">
                         <label for="img5"> 
-                        <img src="img/produto5.png">
+                        <img src="../img/produto5.png">
                         </label>
                     </li>
 
                     </ul>
                 </section>
                 <section class="Img-Principal">
-                    <img src="img/produto1.png" alt="Produto">
+                    <img src="../img/produto1.png" alt="Produto">
                 </section>
             </section>
 

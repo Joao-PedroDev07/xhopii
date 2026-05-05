@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
@@ -29,17 +29,17 @@
 
                     <div class="carousel-item active">
                         
-                        <img src="img/banner1.png" class="d-block w-100" alt="Banner 1">
+                        <img src="../img/banner1.png" class="d-block w-100" alt="Banner 1">
                     </div>
 
                     <div class="carousel-item">
                         
-                        <img src="img/banner2.png" class="d-block w-100" alt="Banner 2">
+                        <img src="../img/banner2.png" class="d-block w-100" alt="Banner 2">
                     </div>
 
                     <div class="carousel-item">
                 
-                        <img src="img/banner3.png" class="d-block w-100" alt="Banner 3">
+                        <img src="../img/banner3.png" class="d-block w-100" alt="Banner 3">
                     </div>
 
                 </div>
@@ -58,7 +58,7 @@
         </div>
 
         <div class="Promoções">
-        <img src="img/cupom.png">
+        <img src="../img/cupom.png">
             
         </div>
 
@@ -73,7 +73,7 @@
 
                     <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -85,7 +85,7 @@
 
                     <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -96,7 +96,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -107,7 +107,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -118,7 +118,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -129,7 +129,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -140,7 +140,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -151,7 +151,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -162,7 +162,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>
@@ -173,7 +173,7 @@
 
                      <a href="produto.php">
                     <div class="card-produto">
-                        <img src="img/camiseta.jpeg" alt="Produto">
+                        <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
                         <div class="rodape">
                         <span class="preco">R$ 59,90</span>

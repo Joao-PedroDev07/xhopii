@@ -4,27 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Cliente</title>
-    <link rel="stylesheet" href="css/cad_cliente.css">
+    <title>Cadastro Loja</title>
+    <link rel="stylesheet" href="../css/cad_cliente.css">
 
 <body>
-<?php include 'header4.php'; ?>
+
+<?php include 'header1.php'; ?>
+
     <div class="cadastro">
         <div class="cadastro-dentro">
-            <h2> Cadastrar Cliente </h2 >
+            <h2> Cadastrar Loja </h2 >
             
             <form>
 
                 <div class="campo">
-                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="lojanome" placeholder="Nome da Loja">
                 </div>
 
                 <div class="campo">
-                <input type="text" id="sobrenome" placeholder="Sobrenome">
+                <input type="text" id="nome" placeholder="Nome Completo">
                 </div>
 
                 <div class="campo">
-                <input type="number" id="CPF" placeholder="CPF">  
+                <input type="text" id="descricao" placeholder="Descrição da Loja">
+                </div>
+
+                <div class="campo">
+                <input type="number" id="CPF" placeholder="CNPJ">  
                 </div>
 
                 <div class="campo">
@@ -36,6 +42,10 @@
                 </div>
 
                 <div class="campo">
+                <input type="text" id="setor" placeholder="Setor">
+                </div>
+
+                <div class="campo">
                 <input type="email" id="email" placeholder="Email">
                 </div>
 
@@ -44,7 +54,7 @@
                 </div>
 
                 <div class="foto_perfil">
-                    <h2> Selecionar foto de perfl: </h2>
+                    <h2> Selecionar foto da loja: </h2>
                     <div class="area-arquivo">
                         <label for="foto" id="button2">Escolher arquivo</label>
                         <input type="file" id="foto" style="display:none"> <!-- display none escode input !-->

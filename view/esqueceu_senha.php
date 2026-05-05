@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redefinir Senha</title>
-    <link rel="stylesheet" href="css/esqueceu_senha.css">
+    <link rel="stylesheet" href="../css/esqueceu_senha.css">
 </head>
 <body>
 <?php include 'header3.php'; ?>

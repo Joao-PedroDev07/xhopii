@@ -4,20 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Funcionario</title>
-    <link rel="stylesheet" href="css/cad_cliente.css">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="../css/cad_cliente.css">
 
 <body>
-
-<<<<<<< HEAD
 <?php include 'header4.php'; ?>
-=======
-<?php include 'header1.php'; ?>
->>>>>>> 808132c6f0a6ee935d03ba9250a2238048a2b648
-
     <div class="cadastro">
         <div class="cadastro-dentro">
-            <h2> Cadastrar Funcionário </h2 >
+            <h2> Cadastrar Cliente </h2 >
             
             <form>
 
@@ -40,16 +34,6 @@
                 <div class="campo">
                 <input type="number" id="numero" placeholder="Telefone">
                 </div>
-
-                <div class="campo">
-                <input type="text" id="cargo" placeholder="Cargo/Função">
-                </div>
-
-
-                <div class="campo">
-                <input type="number" id="salario" placeholder="Salário">
-                </div>
-
 
                 <div class="campo">
                 <input type="email" id="email" placeholder="Email">

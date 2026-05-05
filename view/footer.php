@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -38,13 +38,13 @@
             <div class="footer-coluna">
             <h4>Pagamento</h4>
                 <div class="pagamentos">
-                <img src="img/pix.jpeg" height="20">
-                <img src="img/boleto.png" height="32">
-                <img src="img/american.jpeg" height="27">
-                <img src="img/visa.png" height="18">
-                <img src="img/mastercard.png" height="20">
-                <img src="img/hipercard.png" height="24">
-                <img src="img/elo.png" height="35">
+                <img src="../img/pix.jpeg" height="20">
+                <img src="../img/boleto.png" height="32">
+                <img src="../img/american.jpeg" height="27">
+                <img src="../img/visa.png" height="18">
+                <img src="../img/mastercard.png" height="20">
+                <img src="../img/hipercard.png" height="24">
+                <img src="../img/elo.png" height="35">
                 </div>
             </div>
 
@@ -60,9 +60,9 @@
             <div class="footer-coluna">
             <h4>Atendimento ao Cliente</h4>
                 <div class="apps">
-                  <img src="img/qrcode.png" width="90" height="90">
-                    <img src="img/googleplay.png" width="100" height="30">
-                    <img src="img/app.png" width="100" height="30">
+                  <img src="../img/qrcode.png" width="90" height="90">
+                    <img src="../img/googleplay.png" width="100" height="30">
+                    <img src="../img/app.png" width="100" height="30">
                 </div>
             </div>
 

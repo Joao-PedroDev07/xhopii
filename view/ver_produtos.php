@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/ver_produtos.css">
+    <link rel="stylesheet" href="../css/ver_produtos.css">
     <title>Produtos</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -33,7 +33,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -48,7 +48,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -63,7 +63,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -78,7 +78,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -93,7 +93,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -108,7 +108,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -123,7 +123,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -138,7 +138,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
@@ -153,7 +153,7 @@
 
                     <a href="produto.php" class="Card-Produto">
                         <section class="Card-Img-Container">
-                            <img src="img/produto1.png" alt="Produto" class="Card-Img">
+                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
                         </section>
                         <section class="Card-Info">
                             <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/header3.css">
+    <link rel="stylesheet" href="../css/header3.css">
     <title>Footer Xhopii</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <section class="Conteudo-Header">
         <section class="Seccao-Logo">
             <a href="home.php" class="Link-Logo">
-                <img src="img/logo.png" class="Img-Logo">
+                <img src="../img/logo.png" class="Img-Logo">
                 <span class="Label-Xhopii">Xhopii</span>
             </a>
             <h1 class="Label-Pagina">Redefinir Senha

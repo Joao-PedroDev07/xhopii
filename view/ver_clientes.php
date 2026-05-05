@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/ver_clientes.css">
+    <link rel="stylesheet" href="../css/ver_clientes.css">
     <title>Clientes</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
 
                 <article class="Card-Cliente">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Cliente" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Cliente-Nome">João Pedro Silva</h3>
@@ -32,7 +32,7 @@
 
                 <article class="Card-Cliente">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Cliente" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Cliente-Nome">Maria Fernanda Souza</h3>
@@ -48,7 +48,7 @@
 
                 <article class="Card-Cliente">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Cliente" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Cliente-Nome">Carlos Eduardo Lima</h3>
@@ -64,7 +64,7 @@
 
                 <article class="Card-Cliente">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Cliente" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Cliente-Nome">Ana Paula Costa</h3>
@@ -80,7 +80,7 @@
 
                 <article class="Card-Cliente">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Cliente" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Cliente-Nome">Lucas Henrique Martins</h3>
@@ -96,7 +96,7 @@
 
                 <article class="Card-Cliente">
                     <section class="Card-Avatar">
-                        <img src="img/avatar.jpg" alt="Cliente" class="Avatar-Img">
+                        <img src="../img/avatar.jpg" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Cliente-Nome">Beatriz Oliveira Ramos</h3>

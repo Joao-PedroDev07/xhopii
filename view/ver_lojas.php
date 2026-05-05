@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/ver_lojas.css">
+    <link rel="stylesheet" href="../css/ver_lojas.css">
     <title>Lojas</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
 
                 <article class="Card-Loja">
                     <section class="Card-Logo">
-                        <img src="img/loja1.png" alt="Loja" class="Loja-Logo">
+                        <img src="../img/loja1.png" alt="Loja" class="Loja-Logo">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Loja-Nome">Xhopii - Centro</h3>
@@ -32,7 +32,7 @@
 
                 <article class="Card-Loja">
                     <section class="Card-Logo">
-                        <img src="img/loja2.png" alt="Loja" class="Loja-Logo">
+                        <img src="../img/loja2.png" alt="Loja" class="Loja-Logo">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Loja-Nome">Xhopii - Norte</h3>
@@ -49,7 +49,7 @@
 
                 <article class="Card-Loja">
                     <section class="Card-Logo">
-                        <img src="img/loja3.png" alt="Loja" class="Loja-Logo">
+                        <img src="../img/loja3.png" alt="Loja" class="Loja-Logo">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Loja-Nome">Xhopii - Sul</h3>
@@ -66,7 +66,7 @@
 
                 <article class="Card-Loja">
                     <section class="Card-Logo">
-                        <img src="img/loja4.png" alt="Loja" class="Loja-Logo">
+                        <img src="../img/loja4.png" alt="Loja" class="Loja-Logo">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Loja-Nome">Xhopii - Leste</h3>
@@ -83,7 +83,7 @@
 
                 <article class="Card-Loja">
                     <section class="Card-Logo">
-                        <img src="img/loja5.png" alt="Loja" class="Loja-Logo">
+                        <img src="../img/loja5.png" alt="Loja" class="Loja-Logo">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Loja-Nome">Xhopii - Oeste</h3>
@@ -100,7 +100,7 @@
 
                 <article class="Card-Loja">
                     <section class="Card-Logo">
-                        <img src="img/loja6.png" alt="Loja" class="Loja-Logo">
+                        <img src="../img/loja6.png" alt="Loja" class="Loja-Logo">
                     </section>
                     <section class="Card-Info">
                         <h3 class="Loja-Nome">Xhopii - Porto Alegre</h3>
