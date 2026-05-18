@@ -29,9 +29,9 @@ class Controlador{
 
     }
 
-    public function cadastrarProduto($nome, $fabricante, $descricao, $valor){
+    public function cadastrarProduto($nome, $fabricante, $descricao, $valor, $quantidade, $foto){
 
-        $produto = new Produto($nome,$fabricante,$descricao,$valor);
+        $produto = new Produto($nome,$fabricante,$descricao,$valor, $quantidade, $foto);
         $this->bancoDeDados->inserirProduto($produto);
     }
 

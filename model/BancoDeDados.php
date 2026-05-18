@@ -34,12 +34,21 @@ class BancoDeDados{
     }
 
     public function inserirProduto($produto){
-        $conexao = $this->conectarBD();
-        $consulta = "INSERT INTO produto (fabricante, descricao, valor) 
-                     VALUES ('" . $produto->get_Fabricante() . "',
-                             '" . $produto->get_Descricao() . "',
-                             '" . $produto->get_Valor() . "')";
-        mysqli_query($conexao,$consulta);
+    $conexao = $this->conectarBD();
+    $consulta = "INSERT INTO produto (nome, fabricante, descricao, valor, quantidade, foto) 
+             VALUES ('" . $produto->get_Nome() . "',
+                     '" . $produto->get_Fabricante() . "',
+                     '" . $produto->get_Descricao() . "',
+                     '" . $produto->get_Valor() . "', 
+                     '" . $produto->get_Quantidade() . "',
+                     '" . $produto->get_Foto() . "')";
+
+        $resultado = mysqli_query($conexao,$consulta);
+
+        if(!$resultado){
+            die("Erro no banco: " . mysqli_error($conexao));
+        }
+
     }
 
     public function inserirFuncionario($funcionario){

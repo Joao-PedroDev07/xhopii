@@ -1,6 +1,6 @@
 <?php
 
-class Cliente{
+class Funcionario{
 
     //Atributos
     protected $nome;

@@ -2,11 +2,11 @@
 
 session_start();
 require_once("../model/BancoDeDados.php"); //puxa os métodos do banco
-
+require_once("../controller/Controlador.php"); //liga o Controller
 require_once("../model/Cliente.php"); //liga as classes
 require_once("../model/Funcionario.php");
 require_once("../model/Produto.php");
-require_once("..model/Loja.php");
+require_once("../model/Loja.php");
 require_once("../model/Cupom.php");
 
 $controlador = new Controlador();
@@ -65,20 +65,24 @@ if(isset($_POST['inputNomeFunc']) && isset($_POST['inputSobrenomeFunc']) &&
     die();
 }
 
-//Cadastro de Produto
-if(!empty($_POST['inputNomeProd']) && !empty($_POST['inputFabricanteProd']) && 
-   !empty($_POST['inputDescricaoProd']) && !empty($_POST['inputValorProd'])){
+// Cadastro de Produto
+if(!empty($_POST['nome']) && !empty($_POST['fabricante']) && 
+   !empty($_POST['descricao']) && !empty($_POST['valor']) && 
+   !empty($_POST['quantidade']) && !empty($_FILES['foto']['name'])){
 
-    $nome = $_POST['inputNomeProd'];
-    $fabricante = $_POST['inputFabricanteProd'];
-    $descricao = $_POST['inputDescricaoProd'];
-    $valor = $_POST['inputValorProd'];
-    
-    #CORRETO
-    $controlador->cadastrarProduto($nome,$fabricante,$descricao,$valor);
+    $nome       = $_POST['nome'];
+    $fabricante = $_POST['fabricante'];
+    $descricao  = $_POST['descricao'];
+    $valor      = $_POST['valor'];
+    $quantidade = $_POST['quantidade'];
+    $foto = $_FILES['foto']['name'];
+    $pastaDestino = "../uploads/" . $foto; 
 
-    header('Location:../view/cadastroProduto.php');
+    move_uploaded_file($_FILES['foto']['tmp_name'], $pastaDestino);
+
+    $controlador->cadastrarProduto($nome, $fabricante, $descricao, $valor, $quantidade, $foto);
+
+    header('Location:../view/home.php');
     die();
 }
-
 ?>

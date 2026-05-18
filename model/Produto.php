@@ -7,13 +7,17 @@ class Produto{
     protected $fabricante;
     protected $descricao;
     protected $valor;
+    protected $quantidade;
+    protected $foto;
 
     //Construtor
-    public function __construct($Nome,$Fabricante,$Descricao,$Valor){
+    public function __construct($Nome,$Fabricante,$Descricao,$Valor, $Quantidade, $Foto){
         $this->nome = $Nome;
         $this->fabricante = $Fabricante;
         $this->descricao = $Descricao;
         $this->valor = $Valor;
+        $this->quantidade = $Quantidade;
+        $this->foto = $Foto;
     }
 
     //Getter e Setter
@@ -47,6 +51,21 @@ class Produto{
 
     public function set_Valor($Valor){
         $this->valor = $Valor;
+    }
+    public function get_Quantidade(){
+        return($this->quantidade);
+    }
+
+    public function set_Quantidade($Quantidade){
+        $this->quantidade = $Quantidade;
+    }
+
+    public function get_Foto(){
+        return($this->foto);
+    }
+
+    public function set_tFoto($Foto){
+        $this->foto = $Foto;
     }
 
     //Métodos
