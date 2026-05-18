@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Maio-2026 às 22:31
+-- Tempo de geração: 18-Maio-2026 às 21:57
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -103,12 +103,20 @@ CREATE TABLE `loja` (
 
 CREATE TABLE `produto` (
   `id` int(11) NOT NULL,
-  `fabricante` varchar(150) NOT NULL,
-  `descricao` text NOT NULL,
-  `valor` decimal(10,2) NOT NULL CHECK (`valor` >= 0),
-  `quantidade` int(11) NOT NULL CHECK (`quantidade` >= 0),
-  `foto` varchar(255) DEFAULT '/uploads/produtos/default.png'
+  `nome` varchar(100) NOT NULL,
+  `fabricante` varchar(100) NOT NULL,
+  `descricao` varchar(255) NOT NULL,
+  `valor` decimal(10,2) NOT NULL,
+  `quantidade` int(11) NOT NULL,
+  `foto` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`id`, `nome`, `fabricante`, `descricao`, `valor`, `quantidade`, `foto`) VALUES
+(1, '123', '213', '123', '123.00', 123, 'WhatsApp Image 2024-12-26 at 15.57.06.jpeg');
 
 --
 -- Índices para tabelas despejadas
@@ -183,7 +191,7 @@ ALTER TABLE `loja`
 -- AUTO_INCREMENT de tabela `produto`
 --
 ALTER TABLE `produto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -43,11 +43,7 @@ class BancoDeDados{
                      '" . $produto->get_Quantidade() . "',
                      '" . $produto->get_Foto() . "')";
 
-        $resultado = mysqli_query($conexao,$consulta);
-
-        if(!$resultado){
-            die("Erro no banco: " . mysqli_error($conexao));
-        }
+        mysqli_query($conexao,$consulta);
 
     }
 
