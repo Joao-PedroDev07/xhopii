@@ -11,45 +11,45 @@
 
 <?php include 'header4.php'; ?>
 
-    <div class="cadastro">
-        <div class="cadastro-dentro">
+    <section class="cadastro">
+        <section class="cadastro-dentro">
             <h2> Cadastrar Produto </h2 >
             
             <form action="../processamento/processamento.php" method="POST" enctype="multipart/form-data">
 
-            <div class="campo">
+            <section class="campo">
                 <input type="text" id="nome" name="nome" placeholder="Nome">
-            </div>
+            </section>
 
-            <div class="campo">
+            <section class="campo">
                 <input type="text" id="fabricante" name="fabricante" placeholder="Fabricante">
-            </div>
+            </section>
 
-            <div class="campo">
+            <section class="campo">
                 <input type="text" id="descricao" name="descricao" placeholder="Descrição">
-            </div>
+            </section>
 
-            <div class="campo">
+            <section class="campo">
                 <input type="number" id="valor" name="valor" placeholder="Valor">
-            </div>
+            </section>
 
-            <div class="campo">
+            <section class="campo">
             <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade">
-            </div>
+            </section>
 
-            <div class="foto_perfil">
+            <section class="foto_perfil">
                     <h2> Selecionar foto do produto: </h2>
-                    <div class="area-arquivo">
+                    <section class="area-arquivo">
                         <label for="foto" id="button2">Escolher arquivo</label>
                         <input type="file" id="foto" name="foto" style="display:none"> <!-- display none escode input !-->
                         <span class="texto_perfil">Nenhum arquivo escolhido</span>
-                    </div>
-                </div>
+                    </section>
+                </section>
                 <button type="submit" id="button1">Cadastrar</button>
 
             </form>
-        </div>
-    </div>
+        </section>
+    </section>
 
 </body>
 </html>

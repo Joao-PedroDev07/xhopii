@@ -9,31 +9,31 @@
 </head>
 <body>
 <?php include 'header3.php'; ?>
-    <div class="esqueceu_senha">
+    <section class="esqueceu_senha">
 
-        <div class="seta"> 
+        <section class="seta"> 
             <a href="index.php">
             <img src="img/seta.png" width=30> 
             </a>
-        </div>
+        </section>
 
-        <div class="esqueceu_senha-dentro">
+        <section class="esqueceu_senha-dentro">
                
             <h2>Redefinir Senha</h2>
 
             <form>
 
-                <div class="campo">
+                <section class="campo">
                     <input type="email" id="email" placeholder="Email">
-                </div>
+                </section>
                 
                 <a href="home.php">
                 <button type="button">Enviar</button>
                 </a>
                 
             </form>
-        </div>
-    </div>
+        </section>
+    </section>
 </body>
 </html>
 <?php include 'footer.php'; ?>

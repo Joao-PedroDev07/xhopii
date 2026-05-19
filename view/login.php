@@ -12,56 +12,56 @@
 
 <?php include 'header2.php'; ?>
 
-    <div class="login">
-        <div class="login-dentro">
+    <section class="login">
+        <section class="login-dentro">
             <h2> Login </h2 >
             
             <form>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="email" id="email" placeholder="Email">
-                </div>
+                </section>
 
-                <div class="campo"> 
+                <section class="campo"> 
                 <input type="password" id="senha" placeholder="Senha">
-                </div>
+                </section>
 
                 <a href="home.php">
                 <button type="button"> Entre</button>
                 </a>
 
-                <div class="links">
+                <section class="links">
                 <a href="esqueceu_senha.php"> Esqueci minha senha</a>
                 <a href="">Fazer login com SMS</a>
-                </div>      
+                </section>      
 
-                <div class="divisor">
+                <section class="divisor">
                     <p>―――――――――――――OU―――――――――――――</p>
-                </div>
+                </section>
 
-                <div class="redes-sociais-primaria">
-                    <div class="redes-sociais">
+                <section class="redes-sociais-primaria">
+                    <section class="redes-sociais">
                     <i class="fa-brands fa-facebook" style="color: #1877F2;"></i>
                     <p>Facebook</p>
-                    </div>
+                    </section>
 
-                    <div class="redes-sociais">
+                    <section class="redes-sociais">
                   <img src="https://www.svgrepo.com/show/475656/google-color.svg" width="16" height="16">
                         <p>Google<p>
-                    </div>
+                    </section>
 
-                    <div class="redes-sociais">
+                    <section class="redes-sociais">
                         <i class="fa-brands fa-apple"></i>
                             <p>Apple</p>
-                    </div>
-                </div>
+                    </section>
+                </section>
 
-                <div class="cadastro"> 
+                <section class="cadastro"> 
                     <p>Novo na Xhoppi?</p> <a href="cad_cliente.php">Cadastrar</a>
-                </div>
+                </section>
             </form>
-        </div>
-    </div>
+        </section>
+    </section>
 
 </body>
 </html>

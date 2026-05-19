@@ -13,36 +13,36 @@
 
     <?php include 'header4.php'; ?>
 
-    <div class="container-principal">
+    <section class="container-principal">
 
-        <div class="Carrosel">
+        <section class="Carrosel">
 
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <section id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
 
-                <div class="carousel-indicators">
+                <section class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+                </section>
 
-                <div class="carousel-inner">
+                <section class="carousel-inner">
 
-                    <div class="carousel-item active">
+                    <section class="carousel-item active">
                         
                         <img src="../img/banner1.png" class="d-block w-100" alt="Banner 1">
-                    </div>
+                    </section>
 
-                    <div class="carousel-item">
+                    <section class="carousel-item">
                         
                         <img src="../img/banner2.png" class="d-block w-100" alt="Banner 2">
-                    </div>
+                    </section>
 
-                    <div class="carousel-item">
+                    <section class="carousel-item">
                 
                         <img src="../img/banner3.png" class="d-block w-100" alt="Banner 3">
-                    </div>
+                    </section>
 
-                </div>
+                </section>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -54,139 +54,139 @@
                     <span class="visually-hidden">Próximo</span>
                 </button>
 
-            </div>
-        </div>
+            </section>
+        </section>
 
-        <div class="Promoções">
+        <section class="Promoções">
         <img src="../img/cupom.png">
             
-        </div>
+        </section>
 
         <h1> Descobertas do Dia </h1>
 
-        <div class="linha"></div>
+        <section class="linha"></section>
 
-        <div class="Produtos">
+        <section class="Produtos">
                
 
-                <div class="caixa-de-produtos">
+                <section class="caixa-de-produtos">
 
                     <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
                     </a>
 
                     <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
                      <a href="produto.php">
-                    <div class="card-produto">
+                    <section class="card-produto">
                         <img src="../img/camiseta.jpeg" alt="Produto">
                         <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <div class="rodape">
+                        <section class="rodape">
                         <span class="preco">R$ 59,90</span>
                         <span class="disponivel">171 disponíveis</span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                     </a>
 
-                </div>
+                </section>
 
-        </div>
+        </section>
 
-    </div>
+    </section>
 
 <?php include 'footer.php'; ?>
 

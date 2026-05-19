@@ -21,7 +21,7 @@
             <a href="#" class="Link-Ajuda">Precisa de ajuda?</a>
         </section>
     </section>
-    <div class="Linha-Destaque"></div>
+    <section class="Linha-Destaque"></section>
 </header>
 </body>
 </html>

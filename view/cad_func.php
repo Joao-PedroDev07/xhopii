@@ -11,66 +11,66 @@
 
 <?php include 'header4.php'; ?>
 
-    <div class="cadastro">
-        <div class="cadastro-dentro">
+    <section class="cadastro">
+        <section class="cadastro-dentro">
             <h2> Cadastrar Funcionário </h2 >
             
             <form>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="text" id="nome" placeholder="Nome">
-                </div>
+                </section>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="text" id="sobrenome" placeholder="Sobrenome">
-                </div>
+                </section>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="number" id="CPF" placeholder="CPF">  
-                </div>
+                </section>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="date" id="data" placeholder="Data">
-                </div>
+                </section>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="number" id="numero" placeholder="Telefone">
-                </div>
+                </section>
 
-                <div class="campo">
+                <section class="campo">
                 <input type="text" id="cargo" placeholder="Cargo/Função">
-                </div>
+                </section>
 
 
-                <div class="campo">
+                <section class="campo">
                 <input type="number" id="salario" placeholder="Salário">
-                </div>
+                </section>
 
 
-                <div class="campo">
+                <section class="campo">
                 <input type="email" id="email" placeholder="Email">
-                </div>
+                </section>
 
-                <div class="campo"> 
+                <section class="campo"> 
                 <input type="password" id="senha" placeholder="Senha">
-                </div>
+                </section>
 
-                <div class="foto_perfil">
+                <section class="foto_perfil">
                     <h2> Selecionar foto de perfl: </h2>
-                    <div class="area-arquivo">
+                    <section class="area-arquivo">
                         <label for="foto" id="button2">Escolher arquivo</label>
                         <input type="file" id="foto" style="display:none"> <!-- display none escode input !-->
                         <span class="texto_perfil">Nenhum arquivo escolhido</span>
-                    </div>
-                </div>
+                    </section>
+                </section>
 
                 <a href="home.php">
                 <button type="button" id="button1"> Cadastrar</button>
                 </a>
 
             </form>
-        </div>
-    </div>
+        </section>
+    </section>
 
 </body>
 </html>
