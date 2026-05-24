@@ -60,7 +60,7 @@ class BancoDeDados{
 
     public function inserirFuncionario($funcionario){
         $conexao = $this->conectarBD();
-        $consulta = "INSERT INTO funcionario (nome, sobrenome, cpf, data, telefone, cargo_funcao, salario, email, senha) 
+        $consulta = "INSERT INTO funcionario (nome, sobrenome, cpf, data, telefone, cargo_funcao, salario, email, senha, foto)
                      VALUES ('" . $funcionario->get_Nome() . "',
                              '" . $funcionario->get_Sobrenome() . "',
                              '" . $funcionario->get_Cpf() . "',
@@ -69,25 +69,27 @@ class BancoDeDados{
                              '" . $funcionario->get_Cargo_funcao() . "',
                              '" . $funcionario->get_Salario() . "',
                              '" . $funcionario->get_Email() . "',
-                             '" . $funcionario->get_Senha() . "')";
+                             '" . $funcionario->get_Senha() . "',
+                             '" . $funcionario->get_Foto() . "')";
         mysqli_query($conexao,$consulta);
     }
 
 
     public function inserirCupom($cupom){
         $conexao = $this->conectarBD();
-        $consulta = "INSERT INTO cupom (codigo_cupom, desconto, valor_maximo, quantidade, data) 
+        $consulta = "INSERT INTO cupom (codigo_cupom, desconto, valor_maximo, quantidade, data, foto)
                      VALUES ('" . $cupom->get_Codigo_cupom() . "',
                              '" . $cupom->get_Desconto() . "',
                              '" . $cupom->get_Valor_maximo() . "',
                              '" . $cupom->get_Quantidade() . "',
-                             '" . $cupom->get_Data() . "')";
+                             '" . $cupom->get_Data() . "',
+                             '" . $cupom->get_Foto() . "')";
         mysqli_query($conexao,$consulta);
     }
 
     public function inserirLoja($loja){
         $conexao = $this->conectarBD();
-        $consulta = "INSERT INTO loja (nome_loja, nome_completo, descricao_loja, cnpj, data, telefone, setor, email, senha) 
+        $consulta = "INSERT INTO loja (nome_loja, nome_completo, descricao_loja, cnpj, data, telefone, setor, email, senha, foto)
                      VALUES ('" . $loja->get_Nome_loja() . "',
                              '" . $loja->get_Nome_completo() . "',
                              '" . $loja->get_Descricao_loja() . "',
@@ -96,7 +98,8 @@ class BancoDeDados{
                              '" . $loja->get_Telefone() . "',
                              '" . $loja->get_Setor() . "',
                              '" . $loja->get_Email() . "',
-                             '" . $loja->get_Senha() . "')";
+                             '" . $loja->get_Senha() . "',
+                             '" . $loja->get_Foto() . "')";
         mysqli_query($conexao,$consulta);
     }
 

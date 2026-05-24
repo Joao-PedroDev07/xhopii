@@ -15,58 +15,59 @@
         <section class="cadastro-dentro">
             <h2> Cadastrar Funcionário </h2 >
             
-            <form>
+            <form method="POST" action="../processamento/processamento.php" enctype="multipart/form-data">
+                <input type="hidden" name="acao" value="cadastro_funcionario">
 
                 <section class="campo">
-                <input type="text" id="nome" placeholder="Nome">
-                </section>
-
-                <section class="campo">
-                <input type="text" id="sobrenome" placeholder="Sobrenome">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
                 </section>
 
                 <section class="campo">
-                <input type="number" id="CPF" placeholder="CPF">  
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
                 </section>
 
                 <section class="campo">
-                <input type="date" id="data" placeholder="Data">
+                <input type="number" name="cpf" id="CPF" placeholder="CPF">
                 </section>
 
                 <section class="campo">
-                <input type="number" id="numero" placeholder="Telefone">
+                <input type="date" name="data" id="data" placeholder="Data">
                 </section>
 
                 <section class="campo">
-                <input type="text" id="cargo" placeholder="Cargo/Função">
+                <input type="number" name="telefone" id="numero" placeholder="Telefone">
                 </section>
-
 
                 <section class="campo">
-                <input type="number" id="salario" placeholder="Salário">
+                <input type="text" name="cargo_funcao" id="cargo" placeholder="Cargo/Função">
                 </section>
-
 
                 <section class="campo">
-                <input type="email" id="email" placeholder="Email">
+                <input type="number" name="salario" id="salario" placeholder="Salário">
                 </section>
 
-                <section class="campo"> 
-                <input type="password" id="senha" placeholder="Senha">
+                <section class="campo">
+                <input type="email" name="email" id="email" placeholder="Email">
                 </section>
+
+                <section class="campo">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                </section>
+
+                <?php if(isset($_GET['erro']) && $_GET['erro'] === 'campos_vazios'): ?>
+                    <p style="color:red">Preencha todos os campos.</p>
+                <?php endif; ?>
 
                 <section class="foto_perfil">
                     <h2> Selecionar foto de perfl: </h2>
                     <section class="area-arquivo">
                         <label for="foto" id="button2">Escolher arquivo</label>
-                        <input type="file" id="foto" style="display:none"> <!-- display none escode input !-->
+                        <input type="file" name="foto" id="foto" style="display:none">
                         <span class="texto_perfil">Nenhum arquivo escolhido</span>
                     </section>
                 </section>
 
-                <a href="home.php">
-                <button type="button" id="button1"> Cadastrar</button>
-                </a>
+                <button type="submit" id="button1"> Cadastrar</button>
 
             </form>
         </section>

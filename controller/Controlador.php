@@ -21,19 +21,22 @@ class Controlador{
     }
 
 
-    public function cadastrarfuncionario()
+    public function cadastrarfuncionario($nome, $sobrenome, $cpf, $data, $telefone, $cargo_funcao, $salario, $email, $senha, $foto)
     {
-
-    }
-    public function cadastrarloja()
-
-    {
-
+        $funcionario = new Funcionario($nome, $sobrenome, $cpf, $data, $telefone, $cargo_funcao, $salario, $email, $senha, $foto);
+        $this->bancoDeDados->inserirFuncionario($funcionario);
     }
 
-    public function cadastrarcupom()
+    public function cadastrarloja($nome_loja, $nome_completo, $descricao_loja, $cnpj, $data, $telefone, $setor, $email, $senha, $foto)
     {
+        $loja = new Loja($nome_loja, $nome_completo, $descricao_loja, $cnpj, $data, $telefone, $setor, $email, $senha, $foto);
+        $this->bancoDeDados->inserirLoja($loja);
+    }
 
+    public function cadastrarcupom($codigo_cupom, $desconto, $valor_maximo, $quantidade, $data, $foto)
+    {
+        $cupom = new Cupom($codigo_cupom, $desconto, $valor_maximo, $quantidade, $data, $foto);
+        $this->bancoDeDados->inserirCupom($cupom);
     }
 
     public function cadastrarProduto($nome, $fabricante, $descricao, $valor, $quantidade, $foto){

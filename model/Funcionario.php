@@ -8,17 +8,21 @@ class Funcionario{
     protected $cpf;
     protected $data;
     protected $telefone;
+    protected $cargo_funcao;
+    protected $salario;
     protected $email;
     protected $senha;
     protected $foto;
 
     //Construtor
-    public function __construct($Nome,$Sobrenome,$Cpf,$Data,$Telefone,$Email,$Senha,$Foto){
+    public function __construct($Nome,$Sobrenome,$Cpf,$Data,$Telefone,$Cargo_funcao,$Salario,$Email,$Senha,$Foto){
         $this->nome = $Nome;
         $this->sobrenome = $Sobrenome;
         $this->cpf = $Cpf;
         $this->data = $Data;
         $this->telefone = $Telefone;
+        $this->cargo_funcao = $Cargo_funcao;
+        $this->salario = $Salario;
         $this->email = $Email;
         $this->senha = $Senha;
         $this->foto = $Foto;
@@ -63,6 +67,22 @@ class Funcionario{
 
     public function set_Telefone($Telefone){
         $this->telefone = $Telefone;
+    }
+
+    public function get_Cargo_funcao(){
+        return($this->cargo_funcao);
+    }
+
+    public function set_Cargo_funcao($Cargo_funcao){
+        $this->cargo_funcao = $Cargo_funcao;
+    }
+
+    public function get_Salario(){
+        return($this->salario);
+    }
+
+    public function set_Salario($Salario){
+        $this->salario = $Salario;
     }
 
     public function get_Email(){
