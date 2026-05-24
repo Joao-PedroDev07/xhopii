@@ -9,10 +9,17 @@ class Controlador{
         $this->bancoDeDados = new BancoDeDados("localhost","root","","xhopii");
     }
 
-    public function cadastrarcliente()
+    public function Login($email, $senha)
     {
-
+        return $this->bancoDeDados->verificarlogin($email, $senha);
     }
+
+    public function cadastrarcliente($nome, $sobrenome, $cpf, $data, $telefone, $email, $senha, $foto)
+    {
+        $cliente = new Cliente($nome, $sobrenome, $cpf, $data, $telefone, $email, $senha, $foto);
+        $this->bancoDeDados->inserirCliente($cliente);
+    }
+
 
     public function cadastrarfuncionario()
     {

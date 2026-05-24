@@ -7,6 +7,7 @@
     <title>Lojas</title>
 </head>
 <body>
+     <?php include 'header4.php'; ?>
     <main>
         <section class="Container-Principal">
             <h2 class="Titulo-Pagina">LOJAS</h2>
@@ -120,3 +121,4 @@
     </main>
 </body>
 </html>
+ <?php include 'footer.php'; ?>

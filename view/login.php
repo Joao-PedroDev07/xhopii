@@ -16,18 +16,25 @@
         <section class="login-dentro">
             <h2> Login </h2 >
             
-            <form>
+            <form action="../processamento/processamento.php" method="POST">
+                <input type="hidden" name="acao" value="login">
 
                 <section class="campo">
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email">
                 </section>
 
                 <section class="campo"> 
-                <input type="password" id="senha" placeholder="Senha">
+                <input type="password" name="senha" id="senha" placeholder="Senha">
                 </section>
+                <?php if(isset($_GET['erro']) && $_GET['erro'] === 'campos_vazios'): ?>
+                    <p style="color:red">Preencha todos os campos.</p>
+                <?php endif; ?>
 
-                <a href="home.php">
-                <button type="button"> Entre</button>
+                   <?php if(isset($_GET['erro']) && $_GET['erro'] === 'credenciais'): ?>
+                    <p style="color:red">E-mail ou senha incorretos.</p>
+                <?php endif; ?>
+
+                <button type="submit" id="button"> Entre</button>
                 </a>
 
                 <section class="links">

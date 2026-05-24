@@ -7,6 +7,7 @@
     <title>Cadastrar Cupom</title>
 </head>
 <body>
+    <?php include 'header4.php'; ?>
     <main>
         <section class="Container-Form">
             <section class="Form-Box">
@@ -36,3 +37,4 @@
     </main>
 </body>
 </html>
+<?php include 'footer.php'; ?>

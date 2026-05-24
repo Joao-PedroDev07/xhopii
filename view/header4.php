@@ -25,9 +25,12 @@
                         <li><a href="cad_cliente.php">Cadastro Cliente</a></li>
                         <li><a href="cad_func.php">Cadastro Funcionário</a></li>
                         <li><a href="cad_produto.php">Cadastro Produto</a></li>
+                        <li><a href="cad_cupom.php">Cadastro Cupom</a></li>
                         <li><a href="ver_clientes.php">Ver Clientes</a></li>
                         <li><a href="ver_funcionarios.php">Ver Funcionários</a></li>
                         <li><a href="ver_produtos.php">Ver Produtos</a></li>
+                        <li><a href="ver_cupons.php">Ver Cupom</a></li>
+                        <li><a href="ver_lojas.php">Ver lojas</a></li>
                     </ul>
                 </nav>
         </section>

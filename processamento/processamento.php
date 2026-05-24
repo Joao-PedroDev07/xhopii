@@ -11,37 +11,55 @@ require_once("../model/Cupom.php");
 
 $controlador = new Controlador();
 
-//Login
-if(isset($_POST['inputEmailLog']) && isset($_POST['inputSenhaLog'])){
+//Cadastro de Cliente
+if(isset($_POST['acao']) && $_POST['acao'] === 'cadastro'){
 
-    $_SESSION['estaLogado'] = TRUE;
-    $email = $_POST['inputEmailLog'];
-    $senha = $_POST['inputSenhaLog'];
+    $nome      = $_POST['nome']      ?? '';
+    $sobrenome = $_POST['sobrenome'] ?? '';
+    $cpf       = $_POST['cpf']       ?? '';
+    $data      = $_POST['data']      ?? '';
+    $telefone  = $_POST['telefone']  ?? '';
+    $email     = $_POST['email']     ?? '';
+    $senha     = $_POST['senha']     ?? '';
+    $foto      = !empty($_FILES['foto']['name']) ? $_FILES['foto']['name'] : '';
 
-    //echo "Email: " . $email . "Senha: " . $senha;
+    if(empty($nome) || empty($sobrenome) || empty($cpf) || empty($data) ||
+       empty($telefone) || empty($email) || empty($senha)){
+        header('Location:../view/cad_cliente.php?erro=campos_vazios');
+        die();
+    }
+
+    if(!empty($_FILES['foto']['tmp_name'])){
+        move_uploaded_file($_FILES['foto']['tmp_name'], "../uploads/" . $foto);
+    }
+
+    $controlador->cadastrarcliente($nome, $sobrenome, $cpf, $data, $telefone, $email, $senha, $foto);
+
     header('Location:../view/home.php');
     die();
 }
 
-//Cadastro de Cliente
-if(isset($_POST['inputNome']) && isset($_POST['inputSobrenome']) && 
-   isset($_POST['inputCPF']) && isset($_POST['inputDataNasc']) && 
-   isset($_POST['inputTelefone']) && isset($_POST['inputEmail']) &&
-   isset($_POST['inputSenha'])){
+//Login
+if(isset($_POST['acao']) && $_POST['acao'] === 'login'){
 
-    $nome = $_POST['inputNome'];
-    $sobrenome = $_POST['inputSobrenome'];
-    $cpf = $_POST['inputCPF'];
-    $dataNasc = $_POST['inputDataNasc'];
-    $telefone = $_POST['inputTelefone'];
-    $email = $_POST['inputEmail'];
-    $senha = $_POST['inputSenha'];
-    
-    #MODIFICAR PARA MVC CONTROLADOR
-    inserirCliente($cpf, $nome, $sobrenome, $dataNasc, $telefone, $email, $senha);
+    $email = $_POST['email'] ?? '';
+    $senha = $_POST['senha'] ?? '';
 
-    header('Location:../view/cadastroCliente.php');
-    die();
+    if(empty($email) || empty($senha)){
+        header('Location:../view/login.php?erro=campos_vazios');
+        die();
+    }
+
+    if($controlador->Login($email, $senha) == true){
+        $_SESSION['estaLogado'] = TRUE;
+        header('Location:../view/home.php');
+        die();
+    } else {
+        $_SESSION['estaLogado'] = FALSE;
+        header('Location:../view/login.php?erro=credenciais');
+        die();
+    }
+
 }
 
 //Cadastro de Funcionário

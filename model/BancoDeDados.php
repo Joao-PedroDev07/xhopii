@@ -19,17 +19,28 @@ class BancoDeDados{
         $conexao = mysqli_connect($this->host,$this->login,$this->senha,$this->dataBase);
         return($conexao);
     }
+    public function verificarlogin($email, $senha){
+        $conexao = $this->conectarBD();
+        $consulta = "SELECT * FROM cliente WHERE email = '$email' AND senha = '$senha'";
+        $resultado = mysqli_query($conexao,$consulta);
+        if(mysqli_num_rows($resultado) > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
     public function inserirCliente($cliente){
         $conexao = $this->conectarBD();
-        $consulta = "INSERT INTO cliente (nome, sobrenome, cpf, data, telefone, email, senha) 
+        $consulta = "INSERT INTO cliente (nome, sobrenome, cpf, data, telefone, email, senha, foto) 
                      VALUES ('" . $cliente->get_Nome() . "',
                              '" . $cliente->get_Sobrenome() . "',
                              '" . $cliente->get_Cpf() . "',
                              '" . $cliente->get_Data() . "',
                              '" . $cliente->get_Telefone() . "',
                              '" . $cliente->get_Email() . "',
-                             '" . $cliente->get_Senha() . "')";
+                             '" . $cliente->get_Senha() . "',
+                             '" . $cliente->get_Foto() . "')";
         mysqli_query($conexao,$consulta);
     }
 

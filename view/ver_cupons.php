@@ -7,7 +7,7 @@
     <title>Cupons</title>
 </head>
 <body>
-          <?php include 'header1.php'; ?>
+          <?php include 'header4.php'; ?>
     <main>
         <section class="Container-Principal">
             <h2 class="Titulo-Pagina">CUPONS</h2>
