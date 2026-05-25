@@ -31,7 +31,7 @@
                 </section>
 
                 <section class="campo">
-                <input type="number" name="valor" id="valor" placeholder="Valor">
+                <input type="text" name="valor" id="valor" placeholder="Valor">
                 </section>
 
                 <section class="campo">

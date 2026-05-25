@@ -1,5 +1,7 @@
 <?php
 
+require_once("../model/BancoDeDados.php"); //puxa os métodos do banco
+
 class Controlador{
 
     //Atributo
@@ -46,16 +48,29 @@ class Controlador{
     }
 
     public function visualizarProdutos(){
-        
+
         $listaProdutos = $this->bancoDeDados->retornarProdutos();
-        while($produto = mysqli_fetch_assoc($listaProdutos)){
-            return "<section class=\"conteudo-bloco\">" .
-                   "<h2>" . $produto["nome"] . "</h2>" .
-                   "<p>Fabricante: " . $produto["fabricante"] . "</p>" .
-                   "<p>Descrição: " . $produto["descricao"] . "</p>" . 
-                   "<p>Valor: " . $produto["valor"] . "</p>" .
-                   "</section>";
+        $cards = "";
+    
+        while($produto = mysqli_fetch_assoc($listaProdutos))
+        {
+            $cards .= "<a href='produto.php' class='Card-Produto'>".
+                "<section class='Card-Img-Container'>".
+                "<img src='../uploads/".$produto['foto']."' alt='Produto' class='Card-Img'>".
+                "</section>".
+                "<section class='Card-Info'>".
+                "<p class='Produto-Nome'>".$produto['nome']."</p>".
+                "<p class='Produto-Fab'><span>Fabricante:</span> ".$produto['fabricante']."</p>".
+                "<p class='Produto-Desc'><span>Descrição:</span> ".$produto['descricao']."</p>".
+                "<section class='Produto-Rodape'>".
+                "<span class='Produto-Preco'>R$ ".$produto['valor']."</span>".
+                "<span class='Produto-Estoque'>".$produto['quantidade']." disponíveis</span>".
+                "</section>".
+                "</section>".
+                "</a>";
         }
+    
+        return $cards;
     }
 
 }

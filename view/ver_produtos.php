@@ -1,3 +1,10 @@
+<?php
+    
+    require_once "../controller/Controlador.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,155 +23,12 @@
 
                 <section class="Grid-Produtos">
 
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
+                    <?php 
+                    $controlador = new Controlador;
+                    echo $controlador->visualizarProdutos();
+                    ?>
 
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
 
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
-
-                    <a href="produto.php" class="Card-Produto">
-                        <section class="Card-Img-Container">
-                            <img src="../img/produto1.png" alt="Produto" class="Card-Img">
-                        </section>
-                        <section class="Card-Info">
-                            <p class="Produto-Nome">Camisa Desenvolvedor Front-End CSS</p>
-                            <p class="Produto-Fab"><span>Fabricante:</span> Eletiva Uniformes</p>
-                            <p class="Produto-Desc"><span>Descrição:</span> Uma Camisa ideal para programar por mais de 12 horas</p>
-                            <section class="Produto-Rodape">
-                                <span class="Produto-Preco">R$ 59,90</span>
-                                <span class="Produto-Estoque">171 disponíveis</span>
-                            </section>
-                        </section>
-                    </a>
                 </section>
             </section>
         </section>

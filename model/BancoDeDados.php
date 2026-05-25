@@ -19,6 +19,7 @@ class BancoDeDados{
         $conexao = mysqli_connect($this->host,$this->login,$this->senha,$this->dataBase);
         return($conexao);
     }
+    
     public function verificarlogin($email, $senha){
         $conexao = $this->conectarBD();
         $consulta = "SELECT * FROM cliente WHERE email = '$email' AND senha = '$senha'";
@@ -111,10 +112,12 @@ class BancoDeDados{
     }
 
     public function retornarProdutos(){
+
         $conexao = $this->conectarBD();
         $consulta = "SELECT * FROM produto";
         $listaProdutos = mysqli_query($conexao,$consulta);
         return $listaProdutos;
+
     }
 
     public function retornarFuncionarios(){

@@ -13,7 +13,8 @@
                 <img src="../img/logo.png" alt="Logo">
             </a>
             <h1>Xhopii</h1>
-            <a href="index.php" class="Label-Sair">
+            
+            <a href="logout.php" class="Label-Sair">
             <h1 >Sair</h1>
             </a>
 
