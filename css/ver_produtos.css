@@ -16,6 +16,7 @@ body {
     align-items: center;
     padding: 40px 60px;
     width: 70%;
+    max-width: 1200px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -29,7 +30,7 @@ body {
 
 .Grid-Produtos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 12px;
     width: 100%;
     max-width: 1100px;
@@ -127,4 +128,44 @@ body {
 .Produto-Estoque {
     font-size: 10px;
     color: rgb(94, 94, 94);
+}
+
+@media (max-width: 1100px) {
+    .Container-Principal {
+        width: 85%;
+        padding: 35px 40px;
+    }
+
+    .Grid-Produtos {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 850px) {
+    .Container-Principal {
+        width: 94%;
+        padding: 30px 24px;
+    }
+
+    .Grid-Produtos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .Container-Principal {
+        width: 100%;
+        padding: 24px 14px;
+    }
+
+    .Grid-Produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .Produto-Rodape {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
 }

@@ -10,6 +10,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 50px 80px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .Titulo-Pagina {
@@ -21,7 +23,7 @@ body {
 
 .Grid-Lojas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
     width: 100%;
     max-width: 900px;
@@ -115,4 +117,29 @@ body {
 .Btn-Excluir:hover {
     border-color: rgb(251, 86, 48);
     color: rgb(251, 86, 48);
+}
+
+@media (max-width: 850px) {
+    .Container-Principal {
+        padding: 40px 32px;
+    }
+
+    .Grid-Lojas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .Container-Principal {
+        padding: 30px 16px;
+    }
+
+    .Grid-Lojas {
+        grid-template-columns: 1fr;
+    }
+
+    .Card-Acoes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

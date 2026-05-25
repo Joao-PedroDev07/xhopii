@@ -1,6 +1,7 @@
 *{
     margin: 0; 
     padding: 0;
+    box-sizing: border-box;
     }
 header{
     width: 100%;
@@ -15,6 +16,7 @@ header .Logo-Xhopii{
     justify-content: flex-start;
     align-items: center;
     height: 75%;
+    padding: 0 16px;
 }
 
 header .Logo-Xhopii h1{
@@ -54,6 +56,8 @@ header .Campos-Header ul{
     align-items: center;
     list-style: none;
     gap: 4px;
+    overflow-x: auto;
+    scrollbar-width: thin;
 }
 
 header .Campos-Header a{
@@ -65,4 +69,35 @@ header .Campos-Header a{
     padding: 6px 10px;
     border-radius: 4px;
     transition: background-color 0.2s;
+}
+
+@media (max-width: 900px) {
+    header {
+        height: auto;
+    }
+
+    header .Logo-Xhopii {
+        min-height: 75px;
+    }
+
+    header .Container-Campos-Header {
+        min-height: 35px;
+        height: auto;
+    }
+
+    header .Campos-Header ul {
+        justify-content: flex-start;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 520px) {
+    header .Logo-Xhopii h1 {
+        font-size: 28px;
+    }
+
+    header .Campos-Header a {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
 }

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -16,7 +17,8 @@ body{
 .esqueceu_senha{
 margin-top: 10%;
 width: 500px;
-height: 300px;
+max-width: calc(100vw - 32px);
+min-height: 300px;
 background-color: rgb(255, 255, 255);
 border-radius: 5px; /* cuida da borda */
 border: 3px solid rgb(244, 244, 244);
@@ -57,6 +59,7 @@ justify-content: center;
 .campo input{
 padding: 20px;
 width: 350px;
+max-width: 100%;
 height: 1px;
 border: 1px solid  rgb(230, 223, 223);
 margin-bottom: 50px;
@@ -70,4 +73,21 @@ width: 100%;
 background-color:  rgb(251, 86, 48);
 color: #f0ece4;
 text-transform: uppercase;
+}
+
+@media (max-width: 540px) {
+    .esqueceu_senha {
+        width: calc(100vw - 24px);
+        min-height: auto;
+    }
+
+    .esqueceu_senha-dentro {
+        padding: 32px 22px;
+    }
+
+    .form,
+    .campo,
+    .campo input {
+        width: 100%;
+    }
 }

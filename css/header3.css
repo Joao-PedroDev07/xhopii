@@ -1,6 +1,6 @@
 .Container-Header-Entre {
     background-color: #fff;
-    width: 100vw;
+    width: 100%;
     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
@@ -11,6 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    gap: 16px;
 }
 
 .Seccao-Logo {
@@ -55,4 +56,24 @@
     height: 4px;
     background-color: #ee4d2d;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .Conteudo-Header {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .Seccao-Logo,
+    .Link-Logo {
+        flex-wrap: wrap;
+    }
+
+    .Label-Pagina {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: 0;
+        width: 100%;
+    }
 }

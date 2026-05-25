@@ -1,6 +1,7 @@
 *{
 margin: 0; 
 padding: 0;
+box-sizing: border-box;
 }
 body{
     
@@ -15,7 +16,8 @@ min-height: 100vh;        /* garante que o body ocupa a tela toda */
 .login{
 margin-top: 20px;
 width: 450px;
-height: 600px;
+max-width: calc(100vw - 32px);
+min-height: 600px;
 background-color: #fff;
 border-radius: 10px;
 margin-bottom: 20px;
@@ -39,6 +41,7 @@ form{
 display:flex;
 flex-direction: column;
 gap: 50px;
+width: 100%;
 }
 
 form h3{
@@ -54,7 +57,7 @@ flex-direction: column;
 
 .campo input{
 padding: 15px 14px; 
-
+width: 100%;
 border: 1px solid #ddd;
 }
 
@@ -75,6 +78,8 @@ text-decoration: none;
   align-items: center;
   color: #aaa;
   font-size: 13px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 #button
@@ -118,4 +123,34 @@ text-decoration: none;
 }
 .cadastro p{
 color: rgb(195, 195, 195)
+}
+
+@media (max-width: 520px) {
+    .login {
+        width: calc(100vw - 24px);
+        min-height: auto;
+    }
+
+    .login-dentro {
+        padding: 28px 22px;
+    }
+
+    form {
+        gap: 34px;
+    }
+
+    .links {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: -20px;
+    }
+
+    .redes-sociais-primaria {
+        flex-direction: column;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+        margin-top: 0;
+    }
 }

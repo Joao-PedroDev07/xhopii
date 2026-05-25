@@ -17,7 +17,8 @@ min-height: 100vh;        /* garante que o body ocupa a tela toda */
 .cadastro{
 margin-top: 2%;
 width: 600px;
-height: 10%;
+max-width: calc(100vw - 32px);
+height: auto;
 background-color: #fff;
 border-radius: 10px;
 margin-bottom: 2%;
@@ -46,6 +47,8 @@ form{
 display:flex;
 flex-direction: column;
 gap: 25px;
+width: 350px;
+max-width: 100%;
 }
 
 
@@ -57,7 +60,7 @@ flex-direction: column;
 
 .campo input{
 padding: 20px;
-width: 350px;
+width: 100%;
 height: 1px;
 border: 1px solid #ddd;
 }
@@ -102,6 +105,30 @@ font-size: 13px;
 .texto_perfil {
 font-size: 13px;
 color: rgb(0, 0, 0);
+}
+
+@media (max-width: 650px) {
+    .cadastro {
+        width: calc(100vw - 24px);
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .cadastro-dentro {
+        padding: 15px 20px;
+    }
+
+    .cadastro-dentro h2 {
+        margin-left: 0;
+        align-self: center;
+        text-align: center;
+    }
+
+    .area-arquivo {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 0;
+    }
 }
 
 
