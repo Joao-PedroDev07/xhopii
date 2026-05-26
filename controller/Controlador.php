@@ -55,11 +55,11 @@ class Controlador{
         {
             $cards .= '<a href="produto.php">
                 <section class="card-produto">
-                    <img src="../img/camiseta.jpeg" alt="Produto">
-                    <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                    <img src="../uploads/'.$produto["foto"].'"alt="Produto">
+                    <span class="nome">'. $produto["nome"] .'</span>
                     <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
+                        <span class="preco">'. $produto["valor"] .'</span>
+                        <span class="disponivel">'. $produto["quantidade"] .' disponíveis</span>
                     </section>
                 </section>
             </a>';
