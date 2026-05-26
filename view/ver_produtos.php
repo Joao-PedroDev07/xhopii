@@ -28,7 +28,6 @@
                     echo $controlador->visualizarProdutos();
                     ?>
 
-
                 </section>
             </section>
         </section>

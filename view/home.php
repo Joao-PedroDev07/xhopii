@@ -1,3 +1,9 @@
+<?php
+    
+    require_once "../controller/Controlador.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -70,117 +76,11 @@
                
 
                 <section class="caixa-de-produtos">
-
-                    <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-                    </a>
-
-                    <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
-
-                     <a href="produto.php">
-                    <section class="card-produto">
-                        <img src="../img/camiseta.jpeg" alt="Produto">
-                        <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
-                        <section class="rodape">
-                        <span class="preco">R$ 59,90</span>
-                        <span class="disponivel">171 disponíveis</span>
-                        </section>
-                    </section>
-                    </a>
+                
+                    <?php 
+                    $controlador = new Controlador;
+                    echo $controlador->visualizarProdutosHome();
+                    ?>
 
                 </section>
 

@@ -46,6 +46,27 @@ class Controlador{
         $produto = new Produto($nome,$fabricante,$descricao,$valor, $quantidade, $foto);
         $this->bancoDeDados->inserirProduto($produto);
     }
+    public function visualizarProdutosHome(){
+
+        $listaProdutos = $this->bancoDeDados->retornarProdutos();
+        $cards = "";
+    
+        while($produto = mysqli_fetch_assoc($listaProdutos))
+        {
+            $cards .= '<a href="produto.php">
+                <section class="card-produto">
+                    <img src="../img/camiseta.jpeg" alt="Produto">
+                    <span class="nome">Camisa Desenvolvedor Front-End CSS</span>
+                    <section class="rodape">
+                        <span class="preco">R$ 59,90</span>
+                        <span class="disponivel">171 disponíveis</span>
+                    </section>
+                </section>
+            </a>';
+        }
+    
+        return $cards;
+    }
 
     public function visualizarProdutos(){
 
