@@ -20,6 +20,11 @@
 
             <section class="Grid-Cupons">
 
+                <?php 
+                $controlador = new Controlador();
+                echo $controlador->visualizarCupons();
+                ?>
+
                 <article class="Card-Cupom">
                     <section class="Cupom-Topo">
                         <span class="Cupom-Codigo">XHOPII10</span>

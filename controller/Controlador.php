@@ -94,6 +94,93 @@ class Controlador{
         return $cards;
     }
 
+    public function visualizarClientes(){
+
+        $listaClientes = $this->bancoDeDados->retornarClientes();
+        $cards = "";
+    
+        while($cliente = mysqli_fetch_assoc($listaClientes))
+        {
+            $cards .= '<article class="Card-Cliente">
+                    <section class="Card-Avatar">
+                        <img src="../uploads/'. $cliente['foto'] .'" alt="Cliente" class="Avatar-Img">
+                    </section>
+                    <section class="Card-Info">
+                        <h3 class="Cliente-Nome">'. $cliente['nome'] .'</h3>
+                        <p class="Cliente-Dado"><span>CPF:</span> '. $cliente['cpf'] .'</p>
+                        <p class="Cliente-Dado"><span>Email:</span> '. $cliente['email'] .'</p>
+                        <p class="Cliente-Dado"><span>Telefone:</span> '. $cliente['telefone'] .'</p>
+                    </section>
+                    <section class="Card-Acoes">
+                        <button class="Btn-Ver">Ver</button>
+                        <button class="Btn-Excluir">Excluir</button>
+                    </section>
+                </article>';
+        }
+    
+        return $cards;
+    }
+
+    public function visualizarFuncionarios(){
+
+        $listaFuncionarios = $this->bancoDeDados->retornarFuncionarios();
+        $cards = "";
+    
+        while($funcionario = mysqli_fetch_assoc($listaFuncionarios))
+        {
+            $cards .= '<article class="Card-Funcionario">
+                    <section class="Card-Avatar">
+                        <img src="../uploads/'. $funcionario['foto'] .'" alt="Funcionário" class="Avatar-Img">
+                    </section>
+                    <section class="Card-Info">
+                        <h3 class="Funcionario-Nome">'. $funcionario['nome'] .'</h3>
+                        <p class="Funcionario-Dado"><span>CPF:</span> '. $funcionario['cpf'] .'</p>
+                        <p class="Funcionario-Dado"><span>Cargo:</span> '. $funcionario['cargo_funcao'] .'</p>
+                        <p class="Funcionario-Dado"><span>Salário:</span> R$ '. number_format($funcionario['salario'], 2, ',', '.') .'</p>
+                        <p class="Funcionario-Dado"><span>Email:</span> '. $funcionario['email'] .'</p>
+                    </section>
+                    <section class="Card-Acoes">
+                        <button class="Btn-Ver">Ver</button>
+                        <button class="Btn-Excluir">Excluir</button>
+                    </section>
+                </article>';
+        }
+    
+        return $cards;
+    }
+
+        public function visualizarCupons(){
+
+        $listaCupons = $this->bancoDeDados->retornarCupons();
+        $cards = "";
+    
+        while($cupom = mysqli_fetch_assoc($listaCupons))
+        {
+            $cards .= 
+            '
+                    <article class="Card-Cupom">
+                    <section class="Cupom-Topo">
+                        <span class="Cupom-Codigo">' . $cupom['codigo_cupom'] . '</span>
+                        <span class="Cupom-Badge Percentual">Percentual</span>
+                    </section>
+                    <section class="Cupom-Info">
+                        <p class="Cupom-Dado"><span>Desconto:</span> 10%</p>
+                        <p class="Cupom-Dado"><span>Valor Mínimo:</span> R$ 50,00</p>
+                        <p class="Cupom-Dado"><span>Quantidade:</span> 100 disponíveis</p>
+                        <p class="Cupom-Dado"><span>Expira em:</span> 30/06/2026</p>
+                    </section>
+                    <section class="Cupom-Acoes">
+                        <button class="Btn-Ver">Ver</button>
+                        <button class="Btn-Excluir">Excluir</button>
+                    </section>
+                </article>
+            ';
+        }
+    
+        return $cards;
+    }
+
+
 }
 
 ?>
