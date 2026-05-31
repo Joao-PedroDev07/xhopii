@@ -106,10 +106,10 @@ class Controlador{
                         <img src="../uploads/'. $cliente['foto'] .'" alt="Cliente" class="Avatar-Img">
                     </section>
                     <section class="Card-Info">
-                        <h3 class="Cliente-Nome">'. $cliente['nome'] .'</h3>
-                        <p class="Cliente-Dado"><span>CPF:</span> '. $cliente['cpf'] .'</p>
-                        <p class="Cliente-Dado"><span>Email:</span> '. $cliente['email'] .'</p>
-                        <p class="Cliente-Dado"><span>Telefone:</span> '. $cliente['telefone'] .'</p>
+                        <h3 class="Cliente-Nome">'. htmlspecialchars($cliente['nome']) .'</h3>
+                        <p class="Cliente-Dado"><span>CPF:</span> '. htmlspecialchars($cliente['cpf']) .'</p>
+                        <p class="Cliente-Dado"><span>Email:</span> '. htmlspecialchars($cliente['email']) .'</p>
+                        <p class="Cliente-Dado"><span>Telefone:</span> '. htmlspecialchars($cliente['telefone']) .'</p>
                     </section>
                     <section class="Card-Acoes">
                         <button class="Btn-Ver">Ver</button>
@@ -156,25 +156,51 @@ class Controlador{
     
         while($cupom = mysqli_fetch_assoc($listaCupons))
         {
-            $cards .= 
-            '
-                    <article class="Card-Cupom">
-                    <section class="Cupom-Topo">
-                        <span class="Cupom-Codigo">' . $cupom['codigo_cupom'] . '</span>
-                        <span class="Cupom-Badge Percentual">Percentual</span>
-                    </section>
-                    <section class="Cupom-Info">
-                        <p class="Cupom-Dado"><span>Desconto:</span> 10%</p>
-                        <p class="Cupom-Dado"><span>Valor Mínimo:</span> R$ 50,00</p>
-                        <p class="Cupom-Dado"><span>Quantidade:</span> 100 disponíveis</p>
-                        <p class="Cupom-Dado"><span>Expira em:</span> 30/06/2026</p>
-                    </section>
-                    <section class="Cupom-Acoes">
-                        <button class="Btn-Ver">Ver</button>
-                        <button class="Btn-Excluir">Excluir</button>
-                    </section>
-                </article>
-            ';
+            $cards .= '<article class="Card-Cupom">'
+                    .'<section class="Cupom-Topo">'
+                        .'<img src="../uploads/'. $cupom['foto'] .'" alt="Cupom" class="Cupom-Img">'
+                        .'<span class="Cupom-Codigo">'. $cupom['codigo_cupom'] .'</span>'
+                    .'</section>'
+                    .'<section class="Cupom-Info">'
+                        .'<p class="Cupom-Dado"><span>Desconto:</span> '. $cupom['desconto'] .' %</p>'
+                        .'<p class="Cupom-Dado"><span>Valor Mínimo:</span> R$ '. number_format($cupom['valor_maximo'], 2, ',', '.') .'</p>'
+                        .'<p class="Cupom-Dado"><span>Quantidade:</span> '. $cupom['quantidade'] .'</p>'
+                        .'<p class="Cupom-Dado"><span>Expira em:</span> '. date('d/m/Y', strtotime($cupom['data'])) .'</p>'
+                    .'</section>'
+                    .'<section class="Cupom-Acoes">'
+                        .'<button class="Btn-Ver">Ver</button>'
+                        .'<button class="Btn-Excluir">Excluir</button>'
+                    .'</section>'
+                .'</article>';
+        }
+    
+        return $cards;
+    }
+
+     public function visualizarLojas(){
+
+        $listaLojas = $this->bancoDeDados->retornarLojas();
+        $cards = "";
+    
+        while($loja = mysqli_fetch_assoc($listaLojas))
+        {
+            $cards .= ' <article class="Card-Loja">'
+                    .'<section class="Card-Logo">'
+                        .'<img src="../uploads/'. $loja['foto'] .'" alt="'. htmlspecialchars($loja['nome_loja']) .'" class="Loja-Logo">'
+                    .'</section>'
+                    .'<section class="Card-Info">'
+                        .'<h3 class="Loja-Nome">'. $loja['nome_loja'] .'</h3>'
+                        .'<p class="Loja-Dado"><span>Razão Social:</span> '. $loja['nome_completo'] .'</p>'
+                        .'<p class="Loja-Dado"><span>Descrição:</span> '. $loja['descricao_loja'] .'</p>'
+                        .'<p class="Loja-Dado"><span>CNPJ:</span> '. $loja['cnpj'] .'</p>'
+                        .'<p class="Loja-Dado"><span>Telefone:</span> '. $loja['telefone'] .'</p>'
+                        .'<p class="Loja-Dado"><span>Setor:</span> '. $loja['setor'] .'</p>'
+                    .'</section>'
+                    .'<section class="Card-Acoes">'
+                        .'<button class="Btn-Ver">Ver</button>'
+                        .'<button class="Btn-Excluir">Excluir</button>'
+                    .'</section>'
+                .'</article>';
         }
     
         return $cards;

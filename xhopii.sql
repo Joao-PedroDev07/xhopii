@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18-Maio-2026 às 21:57
--- Versão do servidor: 10.4.27-MariaDB
--- versão do PHP: 8.2.0
+-- Tempo de geração: 31/05/2026 às 03:29
+-- Versão do servidor: 10.4.32-MariaDB
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cliente`
+-- Estrutura para tabela `cliente`
 --
 
 CREATE TABLE `cliente` (
@@ -39,10 +39,22 @@ CREATE TABLE `cliente` (
   `foto` varchar(255) DEFAULT '/uploads/clientes/default.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `cliente`
+--
+
+INSERT INTO `cliente` (`id`, `nome`, `sobrenome`, `cpf`, `data`, `telefone`, `email`, `senha`, `foto`) VALUES
+(1, 'João Pedro', 'de souza', '1', '1111-09-18', '11', 'jao@gmail.com', '1', 'xandao.jpg'),
+(3, 'João Pedro', '1', '11', '1111-09-18', '1111', 'jao1@gmail.com', '1', '4.jpg'),
+(4, 'João Pedro', '12', '5', '9111-09-18', '1', '', '', 'pre2.jpg'),
+(8, 'André Melo', '1', '111', '1111-11-11', '1', '12@gmail.com', '1', 'cliente1.jpg'),
+(10, '1', '11', '2121', '1811-11-11', '1', 'jao5@gmail.com', '1', 'vendedor1.png'),
+(13, '1', '11', '54454', '1811-11-11', '1', 'jao6@gmail.com', '1', 'images.jpg');
+
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cupom`
+-- Estrutura para tabela `cupom`
 --
 
 CREATE TABLE `cupom` (
@@ -55,10 +67,17 @@ CREATE TABLE `cupom` (
   `foto` varchar(255) DEFAULT '/uploads/cupons/default.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `cupom`
+--
+
+INSERT INTO `cupom` (`id`, `codigo_cupom`, `desconto`, `valor_maximo`, `quantidade`, `data`, `foto`) VALUES
+(1, '1', 1.00, 1.00, 1, '0111-11-11', '2.jpg');
+
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `funcionario`
+-- Estrutura para tabela `funcionario`
 --
 
 CREATE TABLE `funcionario` (
@@ -75,10 +94,17 @@ CREATE TABLE `funcionario` (
   `foto` varchar(255) DEFAULT '/uploads/funcionarios/default.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `funcionario`
+--
+
+INSERT INTO `funcionario` (`id`, `nome`, `sobrenome`, `cpf`, `data`, `telefone`, `cargo_funcao`, `salario`, `email`, `senha`, `foto`) VALUES
+(1, 'João Pedro', '1', '1', '1111-11-11', '1', '1', 1.00, 'jao@gmail.com', '1', 'cliente1.jpg');
+
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `loja`
+-- Estrutura para tabela `loja`
 --
 
 CREATE TABLE `loja` (
@@ -95,10 +121,17 @@ CREATE TABLE `loja` (
   `foto` varchar(255) DEFAULT '/uploads/lojas/default.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Despejando dados para a tabela `loja`
+--
+
+INSERT INTO `loja` (`id`, `nome_loja`, `nome_completo`, `descricao_loja`, `cnpj`, `data`, `telefone`, `setor`, `email`, `senha`, `foto`) VALUES
+(1, 'Oscorp', '1', '1', '1', '1111-11-11', '1', '1', '123@gmail.com', '1', 'blusa.webp');
+
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `produto`
+-- Estrutura para tabela `produto`
 --
 
 CREATE TABLE `produto` (
@@ -112,18 +145,18 @@ CREATE TABLE `produto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Extraindo dados da tabela `produto`
+-- Despejando dados para a tabela `produto`
 --
 
 INSERT INTO `produto` (`id`, `nome`, `fabricante`, `descricao`, `valor`, `quantidade`, `foto`) VALUES
-(1, '123', '213', '123', '123.00', 123, 'WhatsApp Image 2024-12-26 at 15.57.06.jpeg');
+(1, '123', '213', '123', 123.00, 123, 'WhatsApp Image 2024-12-26 at 15.57.06.jpeg');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices para tabela `cliente`
+-- Índices de tabela `cliente`
 --
 ALTER TABLE `cliente`
   ADD PRIMARY KEY (`id`),
@@ -131,14 +164,14 @@ ALTER TABLE `cliente`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Índices para tabela `cupom`
+-- Índices de tabela `cupom`
 --
 ALTER TABLE `cupom`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `codigo_cupom` (`codigo_cupom`);
 
 --
--- Índices para tabela `funcionario`
+-- Índices de tabela `funcionario`
 --
 ALTER TABLE `funcionario`
   ADD PRIMARY KEY (`id`),
@@ -146,7 +179,7 @@ ALTER TABLE `funcionario`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Índices para tabela `loja`
+-- Índices de tabela `loja`
 --
 ALTER TABLE `loja`
   ADD PRIMARY KEY (`id`),
@@ -154,38 +187,38 @@ ALTER TABLE `loja`
   ADD UNIQUE KEY `email` (`email`);
 
 --
--- Índices para tabela `produto`
+-- Índices de tabela `produto`
 --
 ALTER TABLE `produto`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas despejadas
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de tabela `cupom`
 --
 ALTER TABLE `cupom`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `funcionario`
 --
 ALTER TABLE `funcionario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `loja`
 --
 ALTER TABLE `loja`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `produto`

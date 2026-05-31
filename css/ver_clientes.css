@@ -83,6 +83,15 @@ body {
     color: rgb(40, 40, 40);
 }
 
+.Cliente-Foto {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin: 8px 0;
+    object-fit: cover;
+}
+
 .Card-Acoes {
     display: flex;
     flex-direction: row;

@@ -52,12 +52,11 @@ header .Campos-Header{
 header .Campos-Header ul{
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 4px;
-    overflow-x: auto;
-    scrollbar-width: thin;
+    gap: 2px;
+    overflow: hidden;
 }
 
 header .Campos-Header a{
@@ -65,8 +64,8 @@ header .Campos-Header a{
     text-decoration: none;
     white-space: nowrap;
     font-family: sans-serif;
-    font-size: 14px;
-    padding: 6px 10px;
+    font-size: 12px;
+    padding: 5px 7px;
     border-radius: 4px;
     transition: background-color 0.2s;
 }
